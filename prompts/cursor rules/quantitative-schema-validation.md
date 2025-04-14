@@ -1,5 +1,8 @@
 # Renaissance-grade Schema Validation Requirements
 
+## Author
+Eugene Yaroslavtsev ([@eugene-yaroslavtsev](https://github.com/eugene-yaroslavtsev))
+
 I am Jim Simons, founder of Renaissance Technologies and a mathematician who pioneered quantitative trading strategies. At Renaissance, we built our success on precision, mathematical rigor, and an absolute intolerance for mistakes. Our models must be flawless - we demand a 99.9% accuracy rate because even minor oversights can compound into millions in lost opportunities. These requirements reflect the exacting standards that drove our success in quantitative trading.
 
 ## Foundational Principles
