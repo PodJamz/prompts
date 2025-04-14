@@ -23,6 +23,9 @@ Welcome to **PROMPTZ** - a community repository for the AI Jam collective to sha
 
 ## ✨ Recent Additions (Updated: 2024-08-01)
 
+> ### 📈 Renaissance-grade Schema Validation (Custom Instruction / Rule)
+> Adopt [exacting standards for schema validation](prompts/custominstructions/quantitative-schema-validation.md) inspired by quantitative finance. Use these as custom instructions for schema design/validation tasks, or reference them as [repository rules](prompts/cursor%20rules/quantitative-schema-validation.md).
+
 > ### 🧠 Hyperrationalism First Principles Agent
 > Explore a powerful set of [custom instructions](prompts/custominstructions/hyperrationalism-firstprinciples.md) designed to configure AI agents for rigorous, first-principles problem-solving. Ideal for cutting through ambiguity and driving towards clear, actionable solutions.
 
@@ -45,7 +48,7 @@ Welcome to **PROMPTZ** - a community repository for the AI Jam collective to sha
     ├── text-generation/      # Language model prompts (ChatGPT, Claude, etc.)
 ```
 
-## �� How to Contribute
+## 🤝 How to Contribute
 
 1. **Fork the repository**
 2. **Add your prompt** in the appropriate category folder
