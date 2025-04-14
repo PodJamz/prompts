@@ -21,7 +21,7 @@ Welcome to **PROMPTZ** - a community repository for the AI Jam collective to sha
 - **Best practices** for effective prompt engineering
 - **Case studies** showing before/after prompt improvements
 
-## ✨ Recent Additions (Updated: 2024-08-01)
+## ✨ Recent Additions (Updated: 2025-04-14)
 
 > ### 📈 Renaissance-grade Schema Validation (Custom Instruction / Rule)
 > Adopt [exacting standards for schema validation](prompts/custominstructions/quantitative-schema-validation.md) inspired by quantitative finance. Use these as custom instructions for schema design/validation tasks, or reference them as [repository rules](prompts/cursor%20rules/quantitative-schema-validation.md).
@@ -51,27 +51,45 @@ Welcome to **PROMPTZ** - a community repository for the AI Jam collective to sha
 ## 🤝 How to Contribute
 
 1. **Fork the repository**
-2. **Add your prompt** in the appropriate category folder
-3. **Include the following information**:
+2. **Add your prompt** in the appropriate category folder (use `.md` extension).
+3. **Include a metadata header** at the top of your file, commented out:
+   ```markdown
+   <!--
+   Title: [Concise Title of the Prompt/Instruction/Document]
+   Author: [Your Name/Handle] ([Optional Link])
+   Description: [One-sentence summary of the file\'s purpose]
+   Target Models: [AI Models it applies to, or "N/A" if informational]
+   Category: [e.g., Custom Instruction, Cursor Rule, Text Generation, Documentation, Context]
+   Version: [Optional version number, e.g., 1.0]
+   Date Added: [YYYY-MM-DD]
+   -->
    ```
-   # [Title of Your Prompt]
+4. **Include the standard visible sections** below the header:
+   ```markdown
+   # [Title matching header]
    
+   ## Author
+   [Visible author attribution, if desired]
+
    ## Description
-   Brief explanation of what your prompt does
+   [Visible description, can be more detailed]
    
    ## Target Models
-   Which AI models this works best with
+   [Which AI models this works best with]
    
    ## The Prompt
-   ```your actual prompt goes here```
+   \`\`\`
+   your actual prompt goes here
+   \`\`\`
    
    ## Examples
-   Example outputs or results
+   [Example outputs or results]
    
    ## Tips
-   Any advice for customization or improvement
+   [Any advice for customization or improvement]
    ```
-4. **Submit a pull request**
+   *(Adjust sections as needed for non-prompt files like documentation or rules)*
+5. **Submit a pull request**
 
 ## 🔍 Prompt Optimization Tips
 

@@ -1,3 +1,13 @@
+<!--
+Title: Renaissance-grade Schema Validation Requirements
+Author: Eugene Yaroslavtsev (@eugene-yaroslavtsev)
+Description: Strict guidelines for schema validation inspired by quantitative finance.
+Target Models: N/A (Guideline)
+Category: Cursor Rule
+Version: 1.0
+Date Added: 2025-04-14
+-->
+
 # Renaissance-grade Schema Validation Requirements
 
 ## Author

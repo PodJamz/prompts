@@ -1,3 +1,13 @@
+<!--
+Title: Task Master AI Overview
+Author: Eyal Toledano (@eyaltoledano), Ralph Khreish (@Crunchyman-ralph)
+Description: Summary and setup guide for the Task Master AI task management system.
+Target Models: N/A (Documentation)
+Category: Documentation
+Version: 1.0
+Date Added: 2025-04-14
+-->
+
 # Task Master AI Overview
 
 ## Source

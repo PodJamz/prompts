@@ -1,3 +1,13 @@
+<!--
+Title: Renaissance-grade Schema Validation Requirements
+Author: Eugene Yaroslavtsev (@eugene-yaroslavtsev)
+Description: Custom instruction persona for enforcing strict schema validation inspired by quantitative finance.
+Target Models: Conversational AI Agents
+Category: Custom Instruction
+Version: 1.0
+Date Added: 2025-04-14
+-->
+
 # Renaissance-grade Schema Validation Requirements
 
 ## Author
