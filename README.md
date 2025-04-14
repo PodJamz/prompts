@@ -21,19 +21,31 @@ Welcome to **PROMPTZ** - a community repository for the AI Jam collective to sha
 - **Best practices** for effective prompt engineering
 - **Case studies** showing before/after prompt improvements
 
+## ✨ Recent Additions (Updated: 2024-08-01)
+
+> ### 🧠 Hyperrationalism First Principles Agent
+> Explore a powerful set of [custom instructions](prompts/custominstructions/hyperrationalism-firstprinciples.md) designed to configure AI agents for rigorous, first-principles problem-solving. Ideal for cutting through ambiguity and driving towards clear, actionable solutions.
+
+> ### 🛠️ Task Master AI Documentation
+> Get acquainted with the Task Master AI tool through our [overview document](prompts/taskmaster@taskmaster/taskmaster-ai-overview.md). Learn how to set up and use this AI-powered task management system within your development workflow.
+
+> ### 🏦 Memory Bank Context Folder
+> We've established a dedicated [folder for memory bank context](prompts/memorybank-context/). This area will store relevant background information and context to enhance AI understanding for project-specific tasks.
+
 ## 📁 Repository Structure
 
 ```
 └── prompts/
     ├── audio/                # Audio generation and processing prompts
     ├── cursor rules/         # Repository rules and guidelines for Cursor
-    ├── memorybankc.../       # Memory bank for project context
+    ├── custominstructions/   # Custom instructions for AI agents
     ├── image-generation/     # Image prompts (DALL-E, Midjourney)
+    ├── memorybank-context/   # Memory bank for project context
+    ├── taskmaster@taskmaster/# Documentation/Prompts for Task Master AI
     ├── text-generation/      # Language model prompts (ChatGPT, Claude, etc.)
-    └── tutorials/            # Guides and best practices
 ```
 
-## 🤝 How to Contribute
+## �� How to Contribute
 
 1. **Fork the repository**
 2. **Add your prompt** in the appropriate category folder
@@ -79,8 +91,8 @@ Welcome to **PROMPTZ** - a community repository for the AI Jam collective to sha
 
 <div align="center">
 
-![Contributors](https://img.shields.io/github/contributors/user/promptz?style=for-the-badge&labelColor=black&color=00ffff)
-![Last Commit](https://img.shields.io/github/last-commit/user/promptz?style=for-the-badge&labelColor=black&color=ff00ff)
+![Contributors](https://img.shields.io/github/contributors/PodJamz/prompts?style=for-the-badge&labelColor=black&color=00ffff)
+![Last Commit](https://img.shields.io/github/last-commit/PodJamz/prompts?style=for-the-badge&labelColor=black&color=ff00ff)
 
 **[Join the Community]** • **[Browse Prompts]** • **[Submit Your Prompt]**
 
