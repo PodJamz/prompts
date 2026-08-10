@@ -1,127 +1,39 @@
-<!-- PROMPTZ -->
+# prompts
 
-<div align="center">
-  
-# 「 PROMPTZ 」
+A field-tested pack of operating rules, agent skills, and video pipeline patterns for anyone building their own AI agent harness and infrastructure.
 
-### AI Prompt Engineering Community Repository
+Everything here was extracted from a working personal AI operating system: a daily-driven setup where agents ship real code, report progress as narrated video, run adversarial boardrooms on their own plans, and improve themselves through nightly retrospectives. None of it is theoretical. Each file states the failure it was born from.
 
-![Version](https://img.shields.io/badge/VERSION-0.1.0-cyan?style=for-the-badge&labelColor=black&color=ff00ff)
-![Collective](https://img.shields.io/badge/COMMUNITY-AI_JAM-cyan?style=for-the-badge&labelColor=black&color=00ffff)
-</div>
+## How to use this
 
-## 🚀 Overview
+Drop any skill folder into your agent's skills directory (`~/.claude/skills/`, `.claude/skills/`, or wherever your harness loads instruction files from). Put the rules into your global instructions file (the file your harness injects into every session). The harness guide explains the architecture that ties it together.
 
-Welcome to **PROMPTZ** - a community repository for the AI Jam collective to share, discover, and improve AI prompts. This repository serves as a central hub where prompt engineers can collaborate and leverage each other's expertise to create more effective AI interactions.
+## Map
 
-## 📋 What You'll Find Here
+| Section | What is in it |
+|---|---|
+| `harness/` | How to build the system itself: architecture, local-first stack, compounding memory |
+| `rules/` | Always-on operating rules: No-BS Mode, Boil the Ocean, No Hardcoded Data |
+| `skills/` | Drop-in skills: git workflow, wayfinding, retro, boardroom, boardroom-your-weaknesses |
+| `video/` | The video stack: deck-to-video pipeline, two-deck decision protocol, production workflow, HyperFrames |
+| `prompts/` | The original community prompt collection (cursor rules, custom instructions). |
 
-- **Proven prompts** for various AI models and use cases
-- **Templates** to help structure your own prompts
-- **Best practices** for effective prompt engineering
-- **Case studies** showing before/after prompt improvements
+## The core ideas, in one paragraph each
 
-## ✨ Recent Additions (Updated: 2025-04-14)
+**Local first.** Your agent should work with no API keys, no rate limits, and no cloud dependency for its daily loop. Local models for routine work, local speech-to-text and text-to-speech for the voice loop, cloud as an opt-in upgrade. See `harness/local-first.md`.
 
-> ### 📈 Renaissance-grade Schema Validation (Custom Instruction / Rule)
-> Adopt [exacting standards for schema validation](prompts/custominstructions/quantitative-schema-validation.md) inspired by quantitative finance. Use these as custom instructions for schema design/validation tasks, or reference them as [repository rules](prompts/cursor%20rules/quantitative-schema-validation.md).
+**Compounding knowledge.** A session that teaches you something and forgets it was a waste. Memory is files, retros mine every session for friction, and each piece of friction gets promoted up a ladder: memory note, then skill, then deterministic hook. The system gets better every day it runs. See `harness/memory-compounding.md`.
 
-> ### 🧠 Hyperrationalism First Principles Agent
-> Explore a powerful set of [custom instructions](prompts/custominstructions/hyperrationalism-firstprinciples.md) designed to configure AI agents for rigorous, first-principles problem-solving. Ideal for cutting through ambiguity and driving towards clear, actionable solutions.
+**Wayfinding.** Work bigger than one session is a map of decision tickets, not a plan document. Clear the fog one decision at a time; bind every worktree to a ticket so ambition does not become sprawl. See `skills/wayfinding/`.
 
-> ### 🛠️ Task Master AI Documentation
-> Get acquainted with the Task Master AI tool through our [overview document](prompts/taskmaster@taskmaster/taskmaster-ai-overview.md). Learn how to set up and use this AI-powered task management system within your development workflow.
+**No BS.** Crisp problem statements, hard constraints, explicit tradeoffs, no fabricated facts, no padding, no agreeing to be agreeable. See `rules/no-bs-mode.md`.
 
-> ### 🏦 Memory Bank Context Folder
-> We've established a dedicated [folder for memory bank context](prompts/memorybank-context/). This area will store relevant background information and context to enhance AI understanding for project-specific tasks.
+**Boil the Ocean.** Scope is bounded by the request; completeness within that scope is non-negotiable. Finish what was asked. See `rules/boil-the-ocean.md`.
 
-## 📁 Repository Structure
+**Boardroom.** Big decisions get eight adversarial perspectives, not one agreeable one. And periodically, the board convenes on the system's own weaknesses. See `skills/boardroom/` and `skills/boardroom-your-weaknesses/`.
 
-```
-└── prompts/
-    ├── audio/                # Audio generation and processing prompts
-    ├── cursor rules/         # Repository rules and guidelines for Cursor
-    ├── custominstructions/   # Custom instructions for AI agents
-    ├── image-generation/     # Image prompts (DALL-E, Midjourney)
-    ├── memorybank-context/   # Memory bank for project context
-    ├── taskmaster@taskmaster/# Documentation/Prompts for Task Master AI
-    ├── text-generation/      # Language model prompts (ChatGPT, Claude, etc.)
-```
+**Video as a first-class deliverable.** Humans do not read walls of text; they watch and decide. Progress reports, proposals, and validations render as narrated video decks through a local pipeline. See `video/`.
 
-## 🤝 How to Contribute
+## License
 
-1. **Fork the repository**
-2. **Add your prompt** in the appropriate category folder (use `.md` extension).
-3. **Include a metadata header** at the top of your file, commented out:
-   ```markdown
-   <!--
-   Title: [Concise Title of the Prompt/Instruction/Document]
-   Author: [Your Name/Handle] ([Optional Link])
-   Description: [One-sentence summary of the file\'s purpose]
-   Target Models: [AI Models it applies to, or "N/A" if informational]
-   Category: [e.g., Custom Instruction, Cursor Rule, Text Generation, Documentation, Context]
-   Version: [Optional version number, e.g., 1.0]
-   Date Added: [YYYY-MM-DD]
-   -->
-   ```
-4. **Include the standard visible sections** below the header:
-   ```markdown
-   # [Title matching header]
-   
-   ## Author
-   [Visible author attribution, if desired]
-
-   ## Description
-   [Visible description, can be more detailed]
-   
-   ## Target Models
-   [Which AI models this works best with]
-   
-   ## The Prompt
-   \`\`\`
-   your actual prompt goes here
-   \`\`\`
-   
-   ## Examples
-   [Example outputs or results]
-   
-   ## Tips
-   [Any advice for customization or improvement]
-   ```
-   *(Adjust sections as needed for non-prompt files like documentation or rules)*
-5. **Submit a pull request**
-
-## 🔍 Prompt Optimization Tips
-
-| Improvement | Technique | Result |
-|-------------|-----------|--------|
-| Clarity | Use specific, concrete language | Reduces AI misinterpretation |
-| Structure | Break complex tasks into steps | Improves task completion |
-| Context | Provide relevant background | Creates more relevant outputs |
-| Examples | Include sample inputs/outputs | Helps AI understand the pattern |
-
-## 📜 Community Guidelines
-
-- All shared prompts remain open-source for community use
-- Credit original creators when building on existing prompts
-- Test your prompts before submission
-- Provide documentation on which models the prompt works with
-- Be respectful and constructive in discussions
-
-## ⚡ Repository Status
-
-<div align="center">
-
-![Contributors](https://img.shields.io/github/contributors/PodJamz/prompts?style=for-the-badge&labelColor=black&color=00ffff)
-![Last Commit](https://img.shields.io/github/last-commit/PodJamz/prompts?style=for-the-badge&labelColor=black&color=ff00ff)
-
-**[Join the Community]** • **[Browse Prompts]** • **[Submit Your Prompt]**
-
-</div>
-
-```
-CONNECTION_TERMINATED();
-// END OF TRANSMISSION
-```
-
-</div>
+MIT. Take it, adapt it, build your own.
